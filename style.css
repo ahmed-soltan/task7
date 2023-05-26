@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+}
+.header nav{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+.header nav .left{
+    display: flex;
+    align-items: center;
+    padding-left: 65px;
+}
+.header nav .left ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.header nav .left ul li{
+   list-style: none;
+   margin: 0 20px;
+}
+.header nav .left ul li a{
+   text-decoration: none;
+   color: black;
+}
+.header nav .left ul li.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    margin-top: 2px;
+    background: blueviolet;
+    display: block;
+
+}
+.header nav img{
+    width: 140px;
+}
+.header nav .right{
+    padding-right: 165px;
+    
+}
+.header nav .right button{
+    border: none;
+    background: white;
+    border-radius: 30px;
+    color: black;
+    padding: 10px 30px;
+}
+.header .content{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.header .content .left{
+    width: 800px;
+}
+.header .content .left h1{
+    font-size: 60px;
+    color: #555;
+    margin-bottom: 27px;
+}
+.header .content .left h1 span{
+    color: blueviolet;
+}
+.header .content .left p{
+    font-size: 29px;
+    color: #777;
+    line-height: 40px;
+}
+.header .content .right{
+    width: 600px;
+    height: 600px;
+    background: url(images/landing_bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.header .content .right img.man{
+    width: 300px;
+    height: 500px;
+    margin-top: 70px;
+}
+.header .content .right .cloud{
+     margin-top: -150px;
+     width: 70%;
+     height: 70%;
+}
+.header img.waves{
+    width: 78%;
+    height: 40%;
+    margin-top: -230px;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 140px 0;
+    
+    position: relative;
+}
+.container img.top{
+    width: 60%;
+    margin-left: 400px;
+}
+.container div img{
+    width: 250px;
+} 
+.container div {
+    text-align: center;
+    width: 350px;
+}
+.container div.first {
+    position: absolute;
+    top: 7%;
+    left: 12%;
+
+}
+.container div h2{
+    color: #666;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.container div p{
+    color: #777;
+    line-height: 25px;
+}
+.container div.second{
+    position: absolute;
+    top: 22%;
+    left: 40%;
+}
+.container div.third{
+    position: absolute;
+    top: 55%;
+    right: 15%;
+}
+.container div.diff{
+    width: 420px;
+    height: 350px;
+    background: url(images/why_kudzoka_bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    color: aliceblue;
+    position: absolute;
+    left: 10%;
+}
+
+.container div.diff div.text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container div.diff div.text h5{
+    margin-left: -90px;
+    font-size: 16px;
+}
+.container div.diff div.text p{
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 7px;
+}
+ div.forth{
+    position: absolute;
+    left: 40%;
+    top: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+ div.forth div{
+    margin: 0 40px;
+    text-align: center;
+}
+ div.forth div.center img{
+    width: 400px;
+}
+ div.forth div .fa-solid{
+    font-size: 22px;
+    margin-top: 50px;
+    color: #777;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 450px;
+    position: relative;
+}
+.footer img.bg{
+    width: 130%;
+    margin-left: -200px;
+}
+.footer .last{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 30%;
+
+}
+.footer .left{
+    width: 800px;
+}
+.footer .left img{
+    width: 25px;
+    margin: 10px;
+}
+.footer .left div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .left div div{
+    padding: 10px 24px;
+    background: white;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.footer .left .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:30px 170px 0 0;
+}
+.footer .left .icon img{
+    margin: 0 10px;
+}
+.footer .left .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0 50px;
+}
+.footer .left .links a{
+    margin: 0 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer .right{
+    margin-top: -100px;
+}
+.footer .right img{
+    width: 700px;
+    height: 650px;
+
+}
